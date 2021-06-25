@@ -1,0 +1,25 @@
+.dark-mode {
+	background-color: darken($color: $grisOscuro, $amount: 10);
+	p,
+	blockquote {
+		color: $blanco;
+	}
+	a,
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $gris;
+	}
+
+	.anuncio {
+		background-color: $grisOscuro;
+		border-color: $grisOscuro;
+		.precio {
+			color: $verde;
+		}
+	}
+	.icon {
+		filter: invert(100%);
+	}
+}

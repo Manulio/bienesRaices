@@ -1,0 +1,42 @@
+.anuncio {
+	background-color: lighten($color: $gris, $amount: 5);
+	border: 1px solid $gris;
+	margin-bottom: 2rem;
+
+	.contenedor-anuncio {
+		padding: 2rem;
+	}
+	h3 {
+		margin: 0;
+	}
+	p {
+		margin: 0 0 0 2rem;
+	}
+}
+
+@include tablet {
+	.contenedor-anuncios {
+		@include grid(3, 2rem);
+	}
+}
+.precio {
+	color: $verde;
+	font-weight: $bold;
+	font-size: 3rem;
+}
+.iconos-caracteristicas {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	max-width: 40rem;
+
+	li {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		img {
+			flex: 0 0 2.8rem;
+			margin-right: 1rem;
+		}
+	}
+}

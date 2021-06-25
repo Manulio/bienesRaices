@@ -1,30 +1,76 @@
 .barra {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    @include tablet {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+	display: flex;
+	flex-direction: column;
+	padding-top: 3rem;
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
+.derecha {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include tablet {
+		align-items: flex-end;
+		flex-direction: row-reverse;
+	}
+}
+.darkmode-boton {
+	width: 3rem;
+	filter: invert(100%);
+	@include tablet {
+		margin-left: 2rem;
+	}
+	&:hover {
+		filter: invert(0);
+		cursor: pointer;
+	}
+}
 .navegacion {
-    @include tablet {
-        display: flex;
-        align-items: center;
-    }
-    a {
-        color: $black;
-        text-decoration: none;
-        font-size: 2.2rem;
-        display: block;
-        text-align: center;
-        font-size: 1.8rem;
-        @include tablet {
-            margin-right: 2rem;
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
-    }
+	display: none;
+	@include tablet {
+		display: flex;
+
+		align-items: center;
+	}
+	a {
+		color: $blanco;
+		text-decoration: none;
+		font-size: 2.2rem;
+		display: block;
+		text-align: center;
+		font-size: 1.8rem;
+		@include tablet {
+			margin-right: 2rem;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.mostrar {
+	display: block;
+	@include tablet {
+		display: flex;
+	}
+}
+/**Menu de hamburguesa**/
+.mobile-menu {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	@include tablet {
+		display: none;
+	}
+	img {
+		width: 3.5rem;
+	}
+	&:hover {
+		cursor: pointer;
+	}
 }

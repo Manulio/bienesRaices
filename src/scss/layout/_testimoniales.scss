@@ -1,0 +1,22 @@
+.testimonial {
+	@include grid(2, 0.5rem);
+	grid-template-columns: auto;
+	background-color: $verde;
+	border-color: transparent;
+	border-radius: 2.5rem;
+	padding: 4rem;
+	row-gap: 5rem;
+	p,
+	blockquote {
+		color: $blanco;
+		font-size: 2.2rem;
+		margin: 0;
+	}
+	p {
+		grid-column: 2;
+		grid-row: 2;
+	}
+}
+.comilla {
+	height: 6.5rem;
+}

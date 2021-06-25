@@ -1,11 +1,21 @@
 .footer {
-    padding: $separacion/2 0;
-    background-color: $grisOscuro;
-    .contenido-footer {
-        padding-top: $separacion/2;
-    }
-    .copyright {
-        color: $blanco;
-        text-align: center;
-    }
+	padding: $separacion/2 0;
+	background-color: $grisOscuro;
+	margin-bottom: 0;
+	.contenido-footer {
+		padding-top: $separacion/2;
+	}
+	.copyright {
+		color: $blanco;
+		text-align: center;
+	}
+	.navegacion {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		@include tablet {
+			flex-direction: row;
+		}
+	}
 }
