@@ -9,37 +9,11 @@
 	</head>
 
 	<body>
-		<header class="header inicio">
-			<div class="contenedor contenido-header">
-				<div class="barra">
-					<a href="/">
-						<img
-							id="logo"
-							src="build/img/logo.svg"
-							alt="Logotipo de Bienes Raices"
-						/>
-					</a>
+			<?php 
+			$inicio = true;
+			include 'includes/templates/header.php' 
+			?>
 
-					<div class="mobile-menu">
-						<img src="build/img/barras.svg" alt="Icono Menu responsive" />
-					</div>
-					<div class="derecha">
-						<img
-							src="/build/img/dark-mode.svg"
-							alt="Dark mode Button "
-							class="darkmode-boton"
-						/>
-						<nav class="navegacion">
-							<a href="nosotros.html">Nosotros</a>
-							<a href="anuncios.html">Anuncios</a>
-							<a href="blog.html">Blog</a>
-							<a href="contacto.html">Contacto</a>
-						</nav>
-					</div>
-				</div>
-				<h1>Venta de Vasas y Departamentos Exclusivos de Lujo</h1>
-			</div>
-		</header>
 
 		<main class="contenedor seccion">
 			<h1>Más sobre nosotros</h1>
@@ -129,7 +103,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -180,7 +154,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -231,7 +205,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -242,7 +216,7 @@
 			<!--contenedor-anuncios-->
 
 			<div class="alinear-derecha">
-				<a href="anuncios.html" class="boton-verde">Ver Todas</a>
+				<a href="anuncios.php" class="boton-verde">Ver Todas</a>
 			</div>
 		</section>
 
@@ -253,7 +227,7 @@
 				berevedad
 			</p>
 			<div class="alinear-derecha">
-				<a href="contacto.html" class="boton-amarillo">Contáctanos</a>
+				<a href="contacto.php" class="boton-amarillo">Contáctanos</a>
 			</div>
 		</section>
 
@@ -274,7 +248,7 @@
 						</picture>
 					</div>
 					<div class="texto-entrada">
-						<a href="entrada.html">
+						<a href="entrada.php">
 							<h4>Terraza en el techo de tu casa</h4>
 							<p class="informacion-meta">
 								Escrito el <span>20/10/2021</span> por <span>Admin</span>
@@ -300,7 +274,7 @@
 						</picture>
 					</div>
 					<div class="texto-entrada">
-						<a href="entrada.html">
+						<a href="entrada.php">
 							<h4>Guía para la decoración de tu hogar</h4>
 							<p class="informacion-meta">
 								Escrito el <span>20/10/2021</span> por <span>Admin</span>
@@ -316,7 +290,7 @@
 			<section class="testimoniales">
 				<h3>Testimoniales</h3>
 				<div class="testimonial">
-					<img class="comilla" src="/build/img/comilla.svg" alt="comilla" />
+					<img class="comilla" src="build/img/comilla.svg" alt="comilla" />
 
 					<blockquote>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -328,17 +302,8 @@
 			</section>
 		</div>
 
-		<footer class="footer seccion">
-			<div class="contenedor contenedor-footer">
-				<nav class="navegacion">
-					<a href="nosotros.html">Nosotros</a>
-					<a href="anuncios.html">Anuncios</a>
-					<a href="blog.html">Blog</a>
-					<a href="contacto.html">Contacto</a>
-				</nav>
-			</div>
-			<p class="copyright">Todos los derechos reservados 2021 &copy;</p>
-		</footer>
+			<?php include 'includes/templates/footer.php' ?>
+
 
 		<script src="build/js/bundle.min.js "></script>
 	</body>

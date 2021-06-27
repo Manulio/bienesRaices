@@ -9,26 +9,8 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="contenedor contenido-header">
-				<div class="barra">
-					<a href="/">
-						<img
-							id="logo"
-							src="build/img/logo.svg"
-							alt="Logotipo de Bienes Raices"
-						/>
-					</a>
+		<?php include 'includes/templates/header.php' ?>
 
-					<nav class="navegacion">
-						<a href="nosotros.html">Nosotros</a>
-						<a href="anuncios.html">Anuncios</a>
-						<a href="blog.html">Blog</a>
-						<a href="contacto.html">Contacto</a>
-					</nav>
-				</div>
-			</div>
-		</header>
 
 		<main class="seccion contenedor">
 			<h2>Casas y Departamentos en Venta</h2>
@@ -74,7 +56,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -122,7 +104,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -170,7 +152,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -218,7 +200,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -266,7 +248,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -314,7 +296,7 @@
 							</li>
 						</ul>
 
-						<a href="anuncio.html" class="boton-amarillo-block">
+						<a href="anuncio.php" class="boton-amarillo-block">
 							Ver Propiedad
 						</a>
 					</div>
@@ -325,17 +307,8 @@
 			<!--contenedor-anuncios-->
 		</main>
 
-		<footer class="footer seccion">
-			<div class="contenedor contenedor-footer">
-				<nav class="navegacion">
-					<a href="nosotros.html">Nosotros</a>
-					<a href="anuncios.html">Anuncios</a>
-					<a href="blog.html">Blog</a>
-					<a href="contacto.html">Contacto</a>
-				</nav>
-			</div>
-			<p class="copyright">Todos los derechos reservados 2021 &copy;</p>
-		</footer>
+			<?php include 'includes/templates/footer.php' ?>
+
 
 		<script src="build/js/bundle.min.js "></script>
 	</body>

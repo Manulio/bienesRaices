@@ -26,7 +26,9 @@
 		margin-left: 2rem;
 	}
 	&:hover {
-		filter: invert(0);
+		filter: invert(71%) sepia(61%) saturate(4607%) hue-rotate(44deg)
+			brightness(95%) contrast(100%);
+
 		cursor: pointer;
 	}
 }
@@ -48,6 +50,9 @@
 			margin-right: 2rem;
 			&:last-of-type {
 				margin-right: 0;
+			}
+			&:hover {
+				color: $verde;
 			}
 		}
 	}
