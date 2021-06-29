@@ -27,7 +27,7 @@ function css() {
 			.pipe(postcss([autoprefixer(), cssnano()]))
 			// .pipe(postcss([autoprefixer()]))
 			.pipe(sourcemaps.write("."))
-			.pipe(dest(".build/css"))
+			.pipe(dest("./build/css"))
 	);
 }
 
@@ -38,7 +38,7 @@ function javascript() {
 		.pipe(terser())
 		.pipe(sourcemaps.write("."))
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(dest(".build/js"));
+		.pipe(dest("./build/js"));
 }
 
 function imagenes() {
